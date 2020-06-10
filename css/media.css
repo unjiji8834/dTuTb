@@ -1,0 +1,611 @@
+@charset "utf-8";
+    
+    
+/*반응형 웹
+(ex.웹으로햇을떄 안보이게할거를 적거나 구조를 바꾼다거나 하는거는 여기다가)*/
+
+/*큰사이즈부터 위에 순서대로 있어야됨*/
+
+
+/*2560x1440세로는118px(크롬윗부분)씩 빼줘서 1322px여기맞춰야함*/
+@media screen and (max-width:2560px){
+    .mainFront{
+        height:127vh;
+    }
+    .copyRight{
+        bottom: 37%;
+        /**right: -10px;**/
+    }
+    .arrow{
+       /** left: 50%;**/
+       margin-top: 60px;
+    }
+    .gnb{
+       /**right: 80px;**/
+    }
+    .gnb li {
+    /**margin: 0 20px;**/
+        
+    }
+    
+    
+    #headerSet {
+       /** padding-top: 70px;**/
+    }
+    .hamburger {
+           /** top: -25px;**/
+    }
+    .subCon1{
+       margin-top:280px;
+    }
+    
+    
+    .ie .wrapMain{
+        
+    }
+    .ie .mainFront{
+      height:120vh;
+    }
+    .ie .copyRight{
+        /**bottom: 90%;**/
+    }
+    
+    
+    /**서브**/
+    .original{
+        margin-top: -1155px;
+    }
+    .description--preview{
+        left: 85%;
+    }
+    .longMac{
+        margin-left: -1170px;
+    }
+    
+}
+
+/* 1920x1200*/
+@media screen and (max-width:1920px){
+    .mainFront{
+        height:110vh;
+    }
+    .copyRight{
+        bottom: 40%;
+        /**right: -10px;**/
+    }
+    .arrow{
+       /** left: 50%;**/
+       margin-top: 50px;
+    }
+    .gnb{
+       /**right: 80px;**/
+    }
+    .gnb li {
+    /**margin: 0 20px;**/
+        
+    }
+    
+    
+    #headerSet {
+       /** padding-top: 70px;**/
+    }
+    .hamburger {
+           /** top: -25px;**/
+    }
+    .subCon1{
+       margin-top:-10px;
+    }
+    
+    
+    .ie .wrapMain{
+        
+    }
+    .ie .mainFront{
+      height:100vh;
+    }
+    .ie .copyRight{
+        /**bottom: 90%;**/
+    }
+    
+    
+    /**서브**/
+    .original{
+        margin-top: -1815px;
+    }
+    .description--preview{
+        left: 90%;
+    }
+    .longMac{
+        margin-left: -1060px;
+    }
+}
+
+/* 1680x1050*/
+@media screen and (max-width:1680px){
+    .mainFront{
+        height:95vh;
+    }
+    .copyRight{
+        bottom: 45%;
+        /**right: -10px;**/
+    }
+    .arrow{
+       /** left: 50%;**/
+       margin-top: 20px;
+    }
+    .gnb{
+       /**right: 80px;**/
+    }
+    .gnb li {
+    /**margin: 0 20px;**/
+        
+    }
+    
+    
+    #headerSet {
+       /** padding-top: 70px;**/
+    }
+    .hamburger {
+           /** top: -25px;**/
+    }
+    .subCon1{
+       margin-top:-100px;
+    }
+    
+    
+    .ie .wrapMain{
+        
+    }
+    .ie .mainFront{
+      height:90vh;
+    }
+    .ie .copyRight{
+        /**bottom: 90%;**/
+    }
+    /**서브**/
+    .original{
+   
+    }
+    .description--preview{
+        left: 94%;
+    }
+    .longMac{
+        margin-left: -1060px;
+    }
+    
+}
+
+/*1600x1200*/
+@media screen and (max-width:1600px){
+    .mainFront{
+        height:110vh;
+    }
+    .copyRight{
+        bottom: 40%;
+        /**right: -10px;**/
+    }
+    .arrow{
+       /** left: 50%;**/
+       margin-top: 20px;
+    }
+    .gnb{
+       /**right: 80px;**/
+    }
+    .gnb li {
+    /**margin: 0 20px;**/
+        
+    }
+    
+    
+    #headerSet {
+       /** padding-top: 70px;**/
+    }
+    .hamburger {
+           /** top: -25px;**/
+    }
+    .subCon1{
+       margin-top:30px;
+    }
+    
+    
+    .ie .wrapMain{
+        
+    }
+    .ie .mainFront{
+      height:105vh;
+    }
+    .ie .copyRight{
+        /**bottom: 90%;**/
+    }
+    
+    
+    
+    /**서브**/
+    .original{
+        margin-top: -1830px;
+    }
+    .description--preview{
+        left: 90%;
+    }
+    .longMac{
+        margin-left: -925px;
+    }
+}
+
+/*1440x900*/
+@media screen and (max-width:1440px){
+    .mainFront{
+        height:80vh;
+    }
+    .copyRight{
+        bottom: 60%;
+        /**right: -10px;**/
+    }
+    .arrow{
+       /** left: 50%;**/
+       margin-top: -20px;
+    }
+    .gnb{
+       /**right: 80px;**/
+    }
+    .gnb li {
+    /**margin: 0 20px;**/
+        
+    }
+    
+    
+    #headerSet {
+       /** padding-top: 70px;**/
+    }
+    .hamburger {
+           /** top: -25px;**/
+    }
+    .subCon1{
+       margin-top:-250px;
+    }
+    
+    
+    .ie .wrapMain{
+        
+    }
+    .ie .mainFront{
+      height:80vh;
+    }
+    .ie .copyRight{
+        /**bottom: 90%;**/
+    }
+    
+    
+    /**서브**/
+    .original{
+      margin-top: -2930px;
+    }
+    .description--preview{
+        left: 98%;
+    }
+    
+    .longMac{
+        margin-left: -937px;
+    }
+}
+
+
+
+
+/*내노트북 가로사이즈 1366*768*/
+@media screen and (max-width:1366px){
+    .mainFront{
+        height: 60vh;
+    }
+    .copyRight{
+        bottom: 85%;
+        font-size: 11px;
+        right: -10px;
+    }
+    .arrow{
+        left: 50%;
+        height: 5vh;
+    }
+    .gnb{
+        font-size:13px; 
+        right: 80px;
+        
+    }
+    .gnb li {
+    margin: 0 20px;
+        
+    }
+    
+    
+    #headerSet {
+        padding-top: 70px;
+    }
+    .hamburger {
+            top: -25px;
+    }
+    .subCon1{
+        margin-top:-420px;
+    }
+    
+    
+    .ie .wrapMain{
+        
+    }
+    .ie .mainFront{
+      height:60vh;
+    }
+    .ie .copyRight{
+        bottom: 90%;
+    }
+
+
+    /**서브**/
+    .original{
+      margin-top: -2995px;
+    }
+    .description--preview{
+        left: 98%;
+    }
+    
+}
+
+
+
+/*더작은노트북 가로사이즈 1280*800*/
+@media screen and (max-width:1280px){
+    .mainFront{
+        height: 70vh;
+    }
+    .copyRight{
+        bottom: 85%;
+        font-size: 11px;
+        right: -10px;
+    }
+    .arrow{
+        left: 50%;
+        height: 5vh;
+    }
+    .gnb{
+        font-size:13px; 
+        right: 80px;
+        
+    }
+    .gnb li {
+    margin: 0 20px;
+        
+    }
+    
+    
+    #headerSet {
+        padding-top: 70px;
+    }
+    .hamburger {
+            top: -25px;
+    }
+    .subCon1{
+        margin-top:-420px;
+    }
+    
+    
+    .ie .wrapMain{
+        
+    }
+    .ie .mainFront{
+      height:60vh;
+    }
+    .ie .copyRight{
+        bottom: 90%;
+    }
+
+
+    /**서브**/
+    .original{
+      margin-top: -2995px;
+    }
+    .description--preview{
+        left: 98%;
+    }
+    
+}
+
+
+/*아이패드 프로 세로사이즈 1024 x 1366*/
+@media screen and (max-width:1024px){
+    .mainFront{
+        display: none;
+    }
+}
+
+
+/*모바일사이즈*/
+@media screen and (max-width:768px){
+    
+    /*inner값 초기화*/
+    .inner{width: auto;}
+    
+    .gnb{
+        display: none;
+    }
+    .get{
+        display: none;
+    }
+    .mainTitle{
+        display: none;
+    }
+    .mainTitle span{
+        display: block;
+    }
+    .copyRight{
+        display: none;
+    }
+    .logoSet {
+       left: 35px;
+        bottom: -32px;
+    }
+    #headerSet{
+        padding-top: 32px;
+        background-color:#0F0F14;
+        /**background-image:url(../images/headerPatten.png);**/
+        height: 70px;
+        width: 100%;
+        border-bottom: 1.2px solid #404040;
+    }
+    /**.hamburger{
+        margin: 50px;
+        margin-top: 75px;
+    }**/
+    
+    .hamburger {
+    margin: 30px;
+    margin-top: 53px;
+    }
+
+    .arrow{
+        left: 52%;
+        height: 7vh;
+    }
+    .snsIcon {
+    position: absolute;
+    bottom: 20%; /**bottom: 80px;**/
+    left: 40px;
+    }
+   .wrapMain{
+        background-image: url(../images/mobileBack.png)no-repeat;
+    }
+    .backFont{
+        display: none;
+    }
+    .backFont2{
+        display: none;
+    }
+    .backFont3{
+        display: none;
+    }
+    .textBox1{
+        display: none;
+    }
+    
+    .mobWeb{
+        display: block;
+        width: 480px;
+        text-align:center;
+        margin:0 auto;
+    }
+    .mobWeb a{
+    }
+    .box1{
+        display: none;
+    }
+    .box2{
+        display: none;
+    }
+    .box3{
+        display: none;
+    }
+    .box4{
+        display: none;
+    }
+    .subCon2{
+        display: none;
+    }
+    .subCon1 {
+     margin-top: -200px;
+    }
+    .mobText{
+        font-family: 'NotoSans';
+        font-size: 17px;
+        letter-spacing: 0;
+        color: #79787D;
+        font-weight: 500;
+    }
+    
+    .mobTitle{
+         display: block;
+        width: 120px;
+        text-align: center;
+        margin: 0 auto;
+        border-bottom: 1.3px solid #404040;
+        margin-bottom: 40px;
+        padding-bottom: 10px;
+        
+    }
+    .subContent{
+        background-color: #0F0F14;
+    }
+    .contact {
+        margin-top: 1600px;
+    }
+    
+    .description{
+        display: none;
+    }
+    /**
+    .conH3{
+        display: none;
+    }**/
+    .action--close{
+        padding: 1em;
+        padding-right: 30px;
+    }
+    
+
+   .original{
+    }
+    .test1 img{
+    display: block;
+    }
+    .longMac{
+        display: none;
+    }
+    
+    .preview::before{
+        height: 1000px;
+    }
+    .longMac{
+    }
+    .mobmacTitle{
+         padding-top: 145px;
+        padding-bottom: 10px;
+        color: #424242;
+        font-weight: 600;
+        letter-spacing: -1px;
+        font-size: 22px;
+    }
+    .mobmacSub{
+        font-size: 15px;
+        color:#2A2A2A;
+        font-weight: 200;
+        padding-bottom: 20px;
+        line-height: 25px;
+    }
+    .mobtestText1{
+        display: block;
+    }
+    .mobWeb{
+        width: 90%;
+        padding: 0 5px;
+    }
+    .mobWebimg{
+    }
+    .mobWebimg img{  
+        max-width: 100%;
+        margin-bottom: 100px;
+        margin-top: 25px;
+
+    }
+    .subContent{
+    }
+    .thankYou{
+        width: 95%;
+        padding:0 10px;
+    }
+    .thankYou img{
+        max-width: 90%;
+    }
+    .mobText{
+        display: block;
+    }
+    #container {
+    background-color: #0F0F14;
+    }
+}

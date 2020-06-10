@@ -1,0 +1,615 @@
+@charset "utf-8";
+
+/*sub 서브*/
+
+
+
+.subCon1{
+    background:#0F0F14;
+    height: 3000px;
+    width: 100%;
+    margin-top: -50px;
+}
+.subCon2{
+    background:#0F0F14;
+    height: 3300px;
+    width: 100%;
+    margin-top: -50px;
+}
+.contact{
+    background:#0F0F14;
+    height: 980px;
+    width: 100%;
+}
+.subContent{
+    
+    position: relative;
+    
+}
+.backFont{
+    position: absolute;
+    right: -10px;
+    top: 196px;
+}
+.backFont2{
+    position: absolute;
+   left: -264px;
+    top: 2038px;
+    transform: rotate(-90deg);
+
+}
+
+.backFont3{
+    position: absolute;
+    right: -18px;
+    top: 3660px;
+}
+
+.box1{
+    position: absolute;
+    top:400px;
+    /*right:0;*/
+    right: 80px;
+}
+.subBox1{
+    position: absolute;
+   
+}
+
+.subBox2{
+      
+}
+
+.subBox3{
+}
+
+.subBox4{
+}
+.box2{
+    position: absolute;
+    top:1100px;
+    left: 75px;
+}
+.box3{    
+    position: absolute;
+    top: 1600px;
+    left: 735px;
+
+}
+.box4{
+    position: absolute;
+    top: 2640px;
+    left: 75px;
+}
+
+.box1{
+    
+    font-size: 0;
+}
+.textBox1{
+    margin-right: 130px;
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+.textBox1 a{
+    color: #707070;
+}
+.oneImg{
+    display: block;
+    margin-bottom: 30px;
+    margin: 0 0 30px auto;
+}
+.oneImg2{
+    margin: 0 230px 30px auto;
+}
+.oneLine{
+    display: block;
+    margin-bottom: 20px;
+}
+
+.textBox1 a span{
+    float: right;
+}
+.oneImg4{
+    float:left;
+}
+.textBox1_3{
+    
+    position: absolute;
+    left: -449px;
+    top: 493px;
+}
+.textBox1_4{
+    position: absolute;
+    top: 0;
+    left: 790px;
+}
+.web{
+    display: inline-block;
+    position: relative;
+    /*box-shadow: 0 5px 10px rgba(0,0,0,0.1);*/
+   
+}
+.web{
+    cursor: pointer;
+}
+
+.web img{
+    display: block;
+}
+.web{
+    
+        box-shadow:15px 15px 25px rgba(0,0,0,0.5);
+}
+
+.Graphic{
+    margin-right: 0;
+    float: left;
+     margin-right: 130px;
+     box-shadow:15px 15px 25px rgba(0,0,0,0.5);
+    font-size: 0;
+}
+.moreBtn{
+    display:block;
+    /**
+    margin:20px 290px;
+    padding-top: 100px;**/
+}
+
+.moreBtn2{
+    padding-top: 15px;
+}
+.bigMorebtn{
+    margin-left:288px;
+    padding-top: 120px;
+    
+}
+
+
+.webClick{
+    width: 650px;
+    height: 366px;
+    text-align: center;
+    background: url(../images/webimghover.png) no-repeat;
+    position: absolute;
+    top:0;
+    opacity: 0;/*★세트*/
+    transition: opacity 0.4s ;/*★세트*//*이건 디스플레이 논/블락으로 스르륵
+    효과못주기 떄문에 오퍼시티로 0한다음에 밑에 호버에 1줘야 스르륵가능함*/
+    font-size: 0;
+}
+
+.webClick a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 200;
+    width:650px;
+    height: 366px;
+}
+
+
+
+
+.web:hover .webClick{
+    display: block;
+    opacity: 1;/*★세트*/
+    transition: opacity 0.4s;
+}
+
+.sub2TextBox1{
+       position: absolute;
+    left: -450px;
+}
+
+.Branding{
+     box-shadow:15px 15px 25px rgba(0,0,0,0.5);
+    
+    font-size: 0;
+}
+.Character{
+     box-shadow:15px 15px 25px rgba(0,0,0,0.5);
+    font-size: 0;
+}
+/***********그래픽호버*****************/
+.graphicClick{
+    width: 487px;
+    height: 668px;
+    text-align: center;
+    background: url(../images/GraphicImghover.png) no-repeat;
+    position: absolute;
+    top:0;
+    opacity: 0;/*★세트*/
+    transition: opacity 0.4s ;/*★세트*//*이건 디스플레이 논/블락으로 스르륵
+    효과못주기 떄문에 오퍼시티로 0한다음에 밑에 호버에 1줘야 스르륵가능함*/
+}
+.graphicClick a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 200;
+    width: 487px;
+    height: 668px;
+}
+
+
+
+
+.Graphic:hover .graphicClick{
+    display: block;
+    opacity: 1;/*★세트*/
+    transition: opacity 0.4s;
+}
+
+.sub2TextBox1{
+    position: absolute;
+    left: -450px;
+}
+
+.bigMorebtn2{
+   margin-left: 0px;
+  padding-top: 270px;
+    
+}
+/***********그래픽호버*****************/
+
+/***********브랜딩호버*****************/
+.BrandingClick{
+    width: 487px;
+    height: 668px;
+    text-align: center;
+    background: url(../images/BrandingImghover.png) no-repeat;
+    position: absolute;
+    top:0;
+    opacity: 0;/*★세트*/
+    transition: opacity 0.4s ;/*★세트*//*이건 디스플레이 논/블락으로 스르륵
+    효과못주기 떄문에 오퍼시티로 0한다음에 밑에 호버에 1줘야 스르륵가능함*/
+}
+.BrandingClick a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 200;
+    width: 487px;
+    height: 668px;
+}
+
+
+
+
+.Branding:hover .BrandingClick{
+    display: block;
+    opacity: 1;/*★세트*/
+    transition: opacity 0.4s;
+}
+
+.sub2TextBox1{
+    position: absolute;
+    left: -450px;
+}
+
+.bigMorebtn2{
+   margin-left: 0px;
+  padding-top: 270px;
+    
+}
+/***********브랜딩호버*****************/
+
+/***********캐릭터호버*****************/
+.CharacterClick{
+    width: 650px;
+    height: 366px;
+    text-align: center;
+    background: url(../images/CharacterImghover.png) no-repeat;
+    position: absolute;
+    top:0;
+    opacity: 0;/*★세트*/
+    transition: opacity 0.4s ;/*★세트*//*이건 디스플레이 논/블락으로 스르륵
+    효과못주기 떄문에 오퍼시티로 0한다음에 밑에 호버에 1줘야 스르륵가능함*/
+}
+.CharacterClick a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 200;
+    width: 650px;
+    height: 366px;
+}
+
+
+
+
+.Character:hover .CharacterClick{
+    display: block;
+    opacity: 1;/*★세트*/
+    transition: opacity 0.4s;
+}
+
+.sub2TextBox1{
+    position: absolute;
+    left: -450px;
+}
+
+
+.bigMorebtn3{
+    margin-left:0;
+    padding-top: 120px;
+    
+}
+
+/***********캐릭터호버*****************/
+
+/***********페스티벌호버*****************/
+.FestivalClick{
+    width: 650px;
+    height: 366px;
+    text-align: center;
+    background: url(../images/FestivalImghover.png) no-repeat;
+    position: absolute;
+    top:0;
+    opacity: 0;/*★세트*/
+    transition: opacity 0.4s ;/*★세트*//*이건 디스플레이 논/블락으로 스르륵
+    효과못주기 떄문에 오퍼시티로 0한다음에 밑에 호버에 1줘야 스르륵가능함*/
+}
+.FestivalClick a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 200;
+    width: 650px;
+    height: 366px;
+}
+
+
+
+
+.Character:hover .FestivalClick{
+    display: block;
+    opacity: 1;/*★세트*/
+    transition: opacity 0.4s;
+}
+
+.sub2TextBox1{
+    position: absolute;
+    left: -450px;
+}
+
+
+.bigMorebtn3{
+    margin-left:0;
+    padding-top: 120px;
+    
+}
+
+/***********페스티벌호버*****************/
+
+/***********프로덕트호버*****************/
+.ProductClick{
+    width: 487px;
+    height: 668px;
+    text-align: center;
+    background: url(../images/ProductImghover.png) no-repeat;
+    position: absolute;
+    top:0;
+    opacity: 0;/*★세트*/
+    transition: opacity 0.4s ;/*★세트*//*이건 디스플레이 논/블락으로 스르륵
+    효과못주기 떄문에 오퍼시티로 0한다음에 밑에 호버에 1줘야 스르륵가능함*/
+}
+.ProductClick a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 200;
+    width: 487px;
+    height: 668px;
+}
+
+
+
+
+.Graphic:hover .ProductClick{
+    display: block;
+    opacity: 1;/*★세트*/
+    transition: opacity 0.4s;
+}
+
+.sub2TextBox1{
+    position: absolute;
+    left: -450px;
+}
+
+.bigMorebtn2{
+   margin-left: 0px;
+  padding-top: 270px;
+    
+}
+/***********프로덕트호버*****************/
+
+
+/***********사진호버*****************/
+.PictureClick{
+    width: 487px;
+    height: 668px;
+    text-align: center;
+    background: url(../images/PictureImghover.png) no-repeat;
+    position: absolute;
+    top:0;
+    opacity: 0;/*★세트*/
+    transition: opacity 0.4s ;/*★세트*//*이건 디스플레이 논/블락으로 스르륵
+    효과못주기 떄문에 오퍼시티로 0한다음에 밑에 호버에 1줘야 스르륵가능함*/
+}
+.PictureClick a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 200;
+    width: 487px;
+    height: 668px;
+}
+
+
+
+
+.Branding:hover .PictureClick{
+    display: block;
+    opacity: 1;/*★세트*/
+    transition: opacity 0.4s;
+}
+
+.sub2TextBox1{
+    position: absolute;
+    left: -450px;
+}
+
+.bigMorebtn2{
+   margin-left: 0px;
+  padding-top: 270px;
+    
+}
+/***********사진호버*****************/
+
+/***********현장실습호버*****************/
+.WorkClick{
+    width: 650px;
+    height: 366px;
+    text-align: center;
+    background: url(../images/WorkImghover.png) no-repeat;
+    position: absolute;
+    top:0;
+    opacity: 0;/*★세트*/
+    transition: opacity 0.4s ;/*★세트*//*이건 디스플레이 논/블락으로 스르륵
+    효과못주기 떄문에 오퍼시티로 0한다음에 밑에 호버에 1줘야 스르륵가능함*/
+}
+.WorkClick a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 200;
+    width: 650px;
+    height: 366px;
+}
+
+
+
+
+.Character:hover .WorkClick{
+    display: block;
+    opacity: 1;/*★세트*/
+    transition: opacity 0.4s;
+}
+
+.sub2TextBox1{
+    position: absolute;
+    left: -450px;
+}
+
+
+.bigMorebtn3{
+    margin-left:0;
+    padding-top: 120px;
+    
+}
+
+/***********현장실습호버*****************/
+/*********************contact**********************/
+
+.thankYou{
+    padding-top: 150px;
+    text-align: center;
+}
+.tfw{
+    color: #414143;
+    font-size: 13px;
+    letter-spacing: 10px;
+    margin: 10px 0;
+}
+.tel{
+    color: #79787D;
+    margin-bottom: 50px;
+    font-size: 
+    
+}
+.tel li{
+    display: inline-block;
+    margin:30px 30px;
+}
+
+.pure-group{
+    border: none;
+    text-align: center;
+    color:#7A7A7B;
+}
+input{
+
+    
+    background:rgb(0,0,0,0) url(../images/webLine.png)no-repeat center bottom;
+    border: none;
+    height: 37px;
+    line-height: 37px;
+    width: 319px;
+    text-align: center;
+    font-family: 'Noto sans';
+    font-size: 15px;
+    color: #fff;
+}
+
+
+
+.emailForm{
+    background: url(../images/conback.png) no-repeat center center;
+    box-sizing: border-box;
+    background-size: cover;
+    height: 470px;
+    text-align: center;
+}
+
+.form-elements{
+}
+
+.button-success{
+    /**
+    margin-top: 50px;
+    border: none;
+    padding: 15px 40px;
+    background: #B7B7B7;
+    cursor:pointer;
+    **/
+    display: none;
+}
+.Pname{
+}
+.Pemail{
+}
+
+.Pgroup{
+}
+
+.name{
+}
+
+textarea{
+    
+    background:rgb(0,0,0,0) url(../images/webLine.png)no-repeat center bottom;
+    border: none;
+    height: 37px;
+    line-height: 37px;
+    width: 319px;
+    text-align: center;
+    font-family: 'Noto sans';
+    font-size: 15px;
+    color: #fff;
+}
+
+
+.thankyou_message{
+    position: absolute;
+    bottom: 0;
+    z-index: 10000;
+    color:gray;
+}
+
+/*********************contact**********************/
+
+.mobWeb{
+    display: none;
+}
+.mobTitle{
+    display: none;
+}
+
+.mobWebimg{
+}
+.mobWebimg img{}

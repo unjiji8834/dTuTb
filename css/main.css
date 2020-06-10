@@ -1,0 +1,269 @@
+@charset "utf-8";
+/*메인*/
+
+.ie .wrapMain{
+    background:url(../images/mainIMG.png) no-repeat center;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-size: cover;
+}
+
+
+
+/****************메인움직이게하는거************************/
+.wave{
+  width:1920px;
+  height: 1000px;
+  background-image:url(http://gahyun.wooga.kr/main/img/testImg/testImg1.jpg);
+  background-size:100%;
+  position:relative;
+}
+.wave span{
+  display:none;
+  font-size:50px; 
+  position: absolute; 
+  top:200px; 
+  left: 400px; 
+  transform: translate(-50%,-50%);
+  color:#fff;
+  background:rgba(0,0,0,0.4);
+}
+
+.wrapMain{ /*움직이는 메인이 canvas인데 왼쪽에 html에서 응용문 뭐시기로 클래스를 만들어줬음! 제이쿼리 기초연습이랑 jQueryIntro 보면 알수잇다능 */
+    
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+/****************메인움직이게하는거************************/
+
+/************오른쪽상단 햄버거 메뉴****************/
+.burger{
+}
+/************오른쪽상단 햄버거 메뉴****************/
+
+
+canvas{
+    position:absolute;
+    left:50%;
+    top:50%;
+}
+#container{}
+
+
+.mainSlider{
+    position: relative;
+    width: 100%;
+    height: 969px;
+    background:#0F0F14;
+}
+
+.mainFront{
+    color: #fff;
+    z-index: 1;
+    box-sizing: border-box;
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    right:0;
+    right:0;
+    bottom:0;
+    left:0;
+    margin:auto;
+}
+
+.copyRight{
+    position: absolute;
+    bottom: 50%;
+    right: -25px;
+    transform: rotate(90deg);
+    font-size: 13px;
+    color: #929292;
+}
+
+
+.snsIcon{
+    position: absolute;
+    bottom:95px;
+    left: 100px;
+    
+}
+.snsIcon li{
+    float: left;
+    margin-right: 10px;
+    
+}
+
+.get{
+    position: absolute;
+    bottom: 100px;
+    left: 180px;
+    font-size: 14px;
+    color: #E0DDE3;
+
+}
+
+.scroll a{}
+.scroll a img{}
+
+
+
+.gnbWrap{
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+    font-size: 15px;
+    
+}
+.gnb li{
+    float: left;
+    margin: 0 25px;
+}
+.gnb li a{
+    color:#A39BAC;
+}
+/********************메뉴호버*****************************/
+
+.gnb {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gnb a {
+  color: #A39BAC;
+  text-decoration: none;
+  text-transform: uppercase;
+  height: 1em;
+  overflow: hidden;
+  line-height: 1;
+  text-align: center;
+  margin: 0 2em;
+}
+.gnb a > span {
+  display: block;
+  transition: -webkit-transform 250ms ease;
+  transition: transform 250ms ease;
+  transition: transform 250ms ease, -webkit-transform 250ms ease;
+}
+.gnb a::after {
+  color: #E0DDE3;
+  content: attr(data-subtext);
+  display: block;
+  transition: -webkit-transform 250ms ease;
+  transition: transform 250ms ease;
+  transition: transform 250ms ease, -webkit-transform 250ms ease;
+ 
+}
+.gnb a:hover > span {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+.gnb a:hover::after {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+/********************메뉴호버*****************************/
+
+
+
+.snsIcon li a{
+}
+.snsIcon li a img{}
+
+.scroll{
+    position: absolute;
+    bottom: 100px;
+    right: 50%;
+    font-size: 15px;
+}
+/**************스크롤*********************/
+
+.arrow {
+    z-index: 1;
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+    margin-left: -30px;
+  top: 90%;
+  -webkit-transform-origin: 90% 90%;
+          transform-origin: 90% 90%;
+  -webkit-transform: translate3d(-90%, -90%, 0);
+          transform: translate3d(-90%, -90%, 0);
+}
+
+.arrow-1 {
+  -webkit-animation: arrow-movement 2s ease-in-out infinite;
+          animation: arrow-movement 2s ease-in-out infinite;
+}
+
+.arrow-2 {
+  -webkit-animation: arrow-movement 2s 1s ease-in-out infinite;
+          animation: arrow-movement 2s 1s ease-in-out infinite;
+}
+
+.arrow:before,
+.arrow:after {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+}
+
+.arrow:before {
+  -webkit-transform: rotate(45deg) translateX(-23%);
+          transform: rotate(45deg) translateX(-23%);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.arrow:after {
+  -webkit-transform: rotate(-45deg) translateX(23%);
+          transform: rotate(-45deg) translateX(23%);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+@-webkit-keyframes arrow-movement {
+  0% {
+    opacity: 0;
+    top: 86%;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes arrow-movement {
+  0% {
+    opacity: 0;
+    top: 86%;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/**************스크롤*********************/
+
+/******오른쪽스크롤커스터마이징*************/
+
+
+/******오른쪽스크롤커스터마이징*************/
+
+
+
+

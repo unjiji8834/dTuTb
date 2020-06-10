@@ -1,0 +1,151 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400); /*이거 로딩화면 폰트*/
+@import url(https://fonts.googleapis.com/css?family=Contrail+One|DM+Serif+Text:400,400i|VT323&display=swap&subset=latin-ext,vietnamese); /*이거 로딩화면 폰트*/
+/*기본css*/
+/****default 기본,이너,cf등등~~~~얘네만있는것******/
+body{
+    font-family: 'NotoSans', sans-serif;
+}
+
+
+body,h1,h2,h3,h4,h5,h6,p,dl,dd{
+    margin:0;
+    
+}
+
+ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color:#292929;
+}
+
+.inner{
+    width:1300px;
+    margin:0 auto;
+}
+
+.cf:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+img{border:0}
+
+/*body {overflow-x: hidden;}/*x축 스크롤바없애주는거*/
+/*************************************/
+
+/* ie 용 스크롤 바 *********************************************/
+html { scrollbar-arrow-color: #0F0F14;
+
+        scrollbar-Track-Color: rgba(0,0,0,0); 
+        scrollbar-base-color:#0F0F14;
+
+        scrollbar-Face-Color:#0F0F14;
+
+        scrollbar-3dLight-Color: rgba(0,0,0,0.5);         
+        scrollbar-DarkShadow-Color: rgba(0,0,0,0.5);
+
+        scrollbar-Highlight-Color: rgba(0,0,0,0.5);
+
+        scrollbar-Shadow-Color: rgba(0,0,0,0.5)
+
+
+}
+
+
+/* ie 용 스크롤 바 *********************************************/
+
+/* Chrome, Safari용 스크롤 바 */
+::-webkit-scrollbar {
+    width: 2px; 
+    height: 2px;
+}
+::-webkit-scrollbar-button:start:decrement, 
+::-webkit-scrollbar-button:end:increment {
+    display: block; width: 12px;height:0; 
+    background: url() rgba(0,0,0,0.5);
+}
+
+::-webkit-scrollbar-track { 
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb {  background:gray;  }
+
+/* ------------------------------------------------------------ */
+/*****로딩***********************************************************/
+
+.loading{
+    width:100%;
+    height:100%;
+    position:fixed;
+    left:0px;
+    top:0px;
+    background:url(../images/loadingback4.png) no-repeat center center;
+    box-sizing: border-box;
+    background-size: cover;
+    z-index:10000; /* 이 값으로 레이어의 위치를 조정합니다. */
+}
+
+
+
+.loadingBox{
+  background: radial-gradient(#222922, #000500);
+  font-family: 'Contrail One', monospace;
+  font-weight: 500;
+  overflow: hidden;
+  text-align: center;
+  letter-spacing: 5px;
+}
+.word {
+  bottom: 0;
+  color: #c209f2;
+  font-size: 2.5em;
+  height: 2.5em;
+  left: 0;
+  line-height: 2.5em;
+  margin: auto;
+  right: 0;
+  position: absolute;
+  text-shadow: 0 0 10px rgba(230, 20, 203, 0.9), 0 0 5px rgba(230, 20, 203, 0.8);
+  top: 0
+}
+
+.word span {
+  display: inline-block;
+  -webkit-transform: translateX(100%) scale(0.9);
+          transform: translateX(100%) scale(0.9);
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
+}
+
+.word .done {
+  color:#ff59f9;
+  -webkit-transform: translateX(0) scale(1);
+          transform: translateX(0) scale(1);
+}
+
+.overlay {
+  background-image: linear-gradient(transparent 0%, rgba(10, 16, 10, 0.5) 50%);
+  background-size: 1000px 2px;
+  bottom: 0;
+  content: '';
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/*****로딩***********************************************************/
+
+
+
+
+
+

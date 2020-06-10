@@ -1,0 +1,50 @@
+
+
+.buttons {
+    margin-top: 100px;
+}
+
+.button {
+    
+    display: inline-block;
+    text-decoration: none;
+    background: #fff;
+    border: 2px solid rgba(0, 0, 0, .9);;
+    /**
+    height: 50px;
+    line-height: 50px;**/
+    padding-left: 32px;
+    padding-right: 32px;
+    transition: all, .4s;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+
+}
+
+.button:hover {
+    
+    background-color: rgba(0, 0, 0, .9);;
+    color: #fff;
+    
+}
+
+.avatar {
+    margin-top: 40px;
+}
+
+.hamburger__icon, 
+.hamburger__icon:before, 
+.hamburger__icon:after {
+    background-color: #fff;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+
+.fat-nav__wrapper{
+    font-size: 30px;
+}
