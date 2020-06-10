@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <!--모바일넣을떄 넣는거-->
+     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <!--모바일넣을떄 넣는거-->
+    
+    <title>Hyeji's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/default.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/include.css"/>
+    <link rel="stylesheet" type="text/css" href="css/sub.css"/>
+    <link rel="stylesheet" type="text/css" href="fonts/fonts.css"/>
+    <link rel="stylesheet" type="text/css" href="css/media.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main3.css"/>
+    <link rel="stylesheet" type="text/css" href="css/aos.css"/>
+    <link rel="stylesheet" type="text/css" href="css/jquery.fatNav.min.css">
+    <link rel="stylesheet" type="text/css" href="css/buttons.css" />
+		<!--[if IE]>
+  		<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+    
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://www.jqueryscript.net/demo/jQuery-Plugin-For-Water-Ripple-Animation-ripples/js/jquery.ripples.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/form-submission-handler.js"></script>
+    <script type="text/javascript" src="js/aos.js"></script>
+
+    
+    <script type="text/javascript">
+        $(document).ready(function(){
+            
+             AOS.init()
+            /*스크롤을 내리면 work에 있는 이미지애니메이션나타나게 해주는거*/
+            
+            
+            //바로하단에있는거는 메인이 div없이 캔버스로 이루어졌기떄문에 그애를 불러서 클래스로 만들어준것임 그리고 그애대신 익스플로러에서는 정지된 메인화면이 나올수있게해놓음
+            var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
+                if (is_chrome) {
+                  $('canvas').wrap('<div class="wrapMain"></div>')
+                }  
+   
+            
+            var ua = window.navigator.userAgent;
+            if(ua.indexOf('MSIE ') > 0 || ua.indexOf('Trident/') > 0){ //윈도우 10까지는 MSIE 윈도우 11부터는 Trident/를 사용한다.
+                $('body').addClass('ie');
+                $('canvas').hide();
+                $('.ie').append('<div class="wrapMain"></div>');
+                $('input').css('color','#000');
+                $('#message').css('color','#000');
+            }
+             
+        })
+    </script>
+   <!--맨밑에 샌드메일 버튼-->
+    <script>
+        (function() {
+            var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+            if(isSafari) {
+                document.getElementById('support-note').style.display = 'block';
+            }
+        })();
+    </script>
+   <!--맨밑에 샌드메일 버튼-->
+   
+    <!--로딩화면-->
+    <script>
+    $(window).load(function(){
+        
+        $(".loading").delay(2300).slideUp(900);//슬라이드 업대신 fadeOut(1000)해도됨
+
+    });
+    </script>
+    <!--로딩화면-->
+     
+   <!--익스플로러일떄 경고창-->
+    <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("해당 홈페이지는 [chrome]브라우저에 최적화 되어있습니다. \n\n안전하고 쾌적한 인터넷 환경을 위해 [chrome]브라우저를 사용해주세요.\n\nPlease view this hompage in a modern browser that supports CSS Variables.");</script>
+    <!--익스플로러일떄 경고창-->
+     
+       
+    <!--파비콘(젤끝에먹게하는게 좋다-->
+    <link rel=" shortcut icon" href="images/favicon.ico">
+    <link rel="icon" href="images/favicon.ico">
+    <!--파비콘(젤끝에먹게하는게 좋다-->
+    <!--반응형 미디어쿼리(젤끝에먹게하는게 좋다-->
+    <link rel="stylesheet" type="text/css" href="css/media.css"/>
+
+</head>
+    <body> 
+        
+        <!--익스플로러경고창9이하거나 8이하일떄 뜨는거-->
+        
+        <!--[if lte IE 8]> <script type=text/javascript> alert("해당 홈페이지는 [chrome]브라우저에 최적화 되어있습니다. \n\n안전하고 쾌적한 인터넷 환경을 위해 [chrome]브라우저나 [Internet Explorer 11] 이상의 브라우저를 사용해주세요.\n\nPlease view this hompage in a modern browser that supports CSS Variables."); </script> <![endif]-->
+        
+        <!--[if lte IE 9]> <script type=text/javascript> alert("해당 홈페이지는 [chrome]브라우저에 최적화 되어있습니다. \n\n안전하고 쾌적한 인터넷 환경을 위해 [chrome]브라우저나 [Internet Explorer 11] 이상의 브라우저를 사용해주세요.\n\nPlease view this hompage in a modern browser that supports CSS Variables."); </script> <![endif]-->
+
+        <!--[if gte IE 9]>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                   
+                })
+            </script>
+        <![endif]-->
+        <!--익스플로러경고창9이하거나 8이하일떄 뜨는거-->
+
+        
+        
+        
+        
+        <!--전체시작-->
+        <div id="wrap">
+           <!--메뉴 햄버거-->
+           <div class="burger">
+            <div class="fat-nav">
+                <div class="fat-nav__wrapper">
+                    <ul>
+                        <li><a href="https://gpwl4518.github.io/dTuTb/">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#2">PORTFOLIO</a></li>
+                        <li><a href="http://naver.me/xVKQB3WC" target="_blank">PDF</a></li>
+                        <li><a href="#4">CONTACT</a></li>
+                    </ul>
+                </div>
+
+                <!--메뉴아이콘움직이는거(얘는 바디안에있어야 구동됨 ㅠ-->
+                <script type="text/javascript" src="js/jquery.fatNav.min.js"></script>
+                <script type="text/javascript" src="js/main4.js"></script>
+                <!--메뉴아이콘움직이는거(얘는 바디안에있어야 구동됨 ㅠ-->
+            </div>
+            </div>
+           <!--메뉴 햄버거-->
+            <!--헤더시작-->
+            <aside id="headerSet">
+                    <nav class="header heBox1 active" data-target="1">
+                            <div class="logoSet cf" data-aos="fade-down" data-aos-delay="2300" data-aos-duration="2300">
+                                <!--로고시작-->
+                                <h1><a href="#"><img src="images/logo2.png" alt="로고"/></a></h1>
+                                <!--로고끘-->
+                                <div class="mainTitle">
+                                GRAPHIC DESIGNER &amp; WEB PUBLISHER <span class="hyeJi">Hye Ji's Portfolio</span>
+                                </div>
+                            </div>
+                            <!--
+                            <div class="menuIcon">
+                                <a href="#"><img src="images/menuIcon.png" alt="메뉴아이콘"/></a>
+                            </div>-->
+                    </nav>
+                    <nav class="header heBox2" data-target="2">
+                            <div class="logoSet">
+                                <!--로고시작-->
+                                <h1><a href="#"><img src="images/logo2.png" alt="로고"/></a></h1>
+                                <!--로고끘-->
+                                <div class="mainTitle">
+                                MENU<span class="hyeJi">Portfolio</span>
+                                </div>
+                            </div>
+                                     
+                    </nav>
+                    <nav class="header heBox3" data-target="3">
+                        
+                        <div class="logoSet">
+                            <!--로고시작-->
+                            <h1><a href="#"><img src="images/logo2.png" alt="로고"/></a></h1>
+                            <!--로고끘-->
+                            <div class="mainTitle">
+                            MENU<span class="hyeJi">Portfolio</span>
+                            </div>
+                        </div>
+                                        
+                    </nav>
+                    <nav class="header heBox4" data-target="4">
+                        <div class="logoSet">
+                            <!--로고시작-->
+                            <h1><a href="#"><img src="images/logo2.png" alt="로고"/></a></h1>
+                            <!--로고끘-->
+                            <div class="mainTitle">
+                            MENU<span class="hyeJi">Contact</span>
+                            </div>
+                        </div>
+                                   
+                    </nav>
+                </aside>
+             <!--헤더끝-->
+                <script type="text/javascript">
+                //<![CDATA[ 
+                $(window).on('scroll', function() {
+                    $('.target').each(function() {
+                        if($(window).scrollTop() >= $(this).offset().top) {
+                            var id = $(this).attr('id');
+                            $('.header').removeClass('active');
+                            $('.header[data-target='+id+']').addClass('active');          
+                        }
+                    });
+                });
+
+                //]]>  
+                </script>
+
+            
+            <!--메뉴변하는거-->
+            
+
+            <section id="main">               
+
+            <!--메뉴변하는거-->
+
+            <!--컨테이너-->
+            <div id="container">
+                <!--메인슬라이더-->
+                <div class="mainSlider target" id="1">
+                    <!--메인움직이게하는거-->
+                    <script src="js/main.js"></script>
+                    <!--메인움직이게하는거-->
+
+                    <!--메인 위에 글씨 감싸는 클래스-->
+                    <div class="mainFront" data-aos="fade-up" data-aos-delay="2300" data-aos-duration="2300">
+                        <!--저작권그거-->
+                        <div class="copyRight">
+                        Copyright &#169; 2020 HYE JI LEE All rights reserved
+                        </div>
+                        <!--저작권그거-->
+
+                        <!--sns-->
+                        <ul class="snsIcon cf">
+                            <li><a href="#"><img src="images/talk.png" alt="카톡"/></a></li>
+                            <li><a href="#"><img src="images/miniEmail.png" alt="줄"/></a></li>
+                            <li><a href="#"><img src="images/email.png" alt="이메일"/></a></li>
+                        </ul>
+                        <!--sns-->
+                            <div class="get">Get in touch</div>
+                        
+                        <!--정지스크롤-->
+                        <!--
+                        <div class="scroll">
+                         <a href="#"><img src="images/scroll.png" alt="내려달라는 움직이는 아이콘"/></a>
+                        </div>-->
+                        <!--정지스크롤-->
+                        
+                        
+                        <!--스크롤화살표-->
+                        
+                              <div class="arrow arrow-1"></div>
+                            <div class="arrow arrow-2"></div>
+                        
+                        <!--스크롤화살표-->
+                        <!--gnb-->
+                        <div class="gnbWrap">
+                            <div class="gnb">
+                              <a href="#" data-subtext="about"><span>About</span></a>
+                              <a href="sub/sub1html.html" data-subtext="portfolio"><span>portfolio</span></a>
+                              <a href="http://naver.me/xVKQB3WC" target="_blank" data-subtext="PDF"><span>PDF</span></a>
+                              <a href="#4" data-subtext="CONTACT"><span>CONTACT</span></a>
+                            </div>
+                        </div> 
+                        <!--gnb-->
+                    </div>
+                    <!--메인 위에 글씨 감싸는 클래스-->
+                </div>
+                <!--메인슬라이더-->
+                <!--서브컨텐츠1-->
+                <div class="subCon1 target" id="2">
+                    <div class="subContent inner">
+                        <div class="backFont"><img src="images/PORTBACK.png" alt="포폴1"/></div>
+                        <div class="backFont2"><img src="images/PORTBACK.png" alt="포폴2"/></div>
+                        <div class="backFont3"><img src="images/ETCback.png" alt="etc"/></div>
+                    
+                        
+                        <!---웹-->
+                        <div class="box1 cf" data-aos="fade-left" data-aos-duration="1000" >
+                            <div class="textBox1">
+                                <a href="#">
+                                <img class="oneImg" src="images/01.png" alt="01"/>
+                                <img class="oneLine" src="images/webLine.png" alt="줄"/>
+                                Web
+                                </a>
+                            </div>
+                            <div class="web">
+                                <a class="webImg" href="#"><img src="images/webImg.png" alt="웹대표이미지"/></a>
+                                
+                                <div class="webClick">
+                                    <a class="moreBtn" href="sub/sub1html.html">
+                                        <img class="bigMorebtn" src="images/more.png">
+                                        <div class="moreBtn2" href="#">MORE</div>
+                                    </a>
+                                </div>
+                          
+                            </div>
+                        </div>
+                            
+                            <!--모바일타이틀-->
+                            <div class="mobTitle" data-aos="fade-up" data-aos-duration="1000">
+                              <img src="images/01.png" alt="포폴타이틀"/>
+                            </div>
+                            <!--모바일타이틀-->
+                          <!--모바일웹-->
+
+                            <div class="mobWeb" data-aos="fade-up" data-aos-duration="1000">
+                               <span class="mobText">Web</span>
+                                <a class="mobWebimg" href="sub/sub1html.html">
+                                    <img src="images/mobWeb.png" alt="모바일웹대표이미지"/>
+                                </a>
+                            </div>
+                            <!--모바일웹-->
+                        <!---웹-->
+                        
+                        
+                        
+                        
+                        <!---그래픽-->
+                        <div class="box2" data-aos="fade-right" data-aos-duration="1000">
+                            <div class="Graphic">
+                                <a href="#"><img src="images/GraphicImg.png" alt="그래픽대표이미지"/></a>
+                               
+                                <div class="webClick graphicClick">
+                                    <a class="moreBtn" href="sub/sub2html.html">
+                                        <img class="bigMorebtn bigMorebtn2" src="images/more.png">
+                                        <div class="moreBtn2" href="#">MORE</div>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                            <div class="textBox1">
+                                <a href="#">
+                                <img class="oneImg oneImg2" src="images/02.png" alt="02"/>
+                                <img class="oneLine oneLine2" src="images/webLine.png" alt="줄"/>
+                                <span>Graphic</span>
+                                </a>
+                            </div>
+                        </div>
+                         
+                             <!--모바일타이틀-->
+                            <div class="mobTitle" data-aos="fade-up" data-aos-duration="1000">
+                              <img src="images/02.png" alt="포폴타이틀"/>
+                            </div>
+                            <!--모바일타이틀-->
+                          <!--모바일그래픽-->
+
+                            <div class="mobWeb" data-aos="fade-up" data-aos-duration="1000">
+                                <span class="mobText">Graphic</span>
+                                <a class="mobWebimg" href="sub/sub2html.html">
+                                    <img src="images/mobGraphic.png" alt="모바일그래픽대표이미지"/>
+                                </a>
+                            </div>
+                            <!--모바일그래픽-->
+                        <!---그래픽-->
+                        
+                        <!---브랜딩-->
+                        <div class="box3" data-aos="fade-left" data-aos-duration="1000">
+                            <div class="textBox1 textBox1_3">
+                                <a href="#">
+                                <img class="oneImg oneImg3" src="images/03.png" alt="03"/>
+                                <img class="oneLine"  src="images/webLine.png" alt="줄"/>
+                                Branding
+                                </a>
+                            </div>
+
+                            <div class="Branding">
+                                <a href="#"><img src="images/BrandingImg.png" alt="브랜딩대표이미지"/></a>
+                                
+                                <div class="webClick graphicClick BrandingClick">
+                                    <a class="moreBtn" href="sub/sub3html.html">
+                                        <img class="bigMorebtn bigMorebtn2" src="images/more.png">
+                                        <div class="moreBtn2" href="#">MORE</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                                                    
+                            <!--모바일타이틀-->
+                            <div class="mobTitle" data-aos="fade-up" data-aos-duration="1000">
+                              <img src="images/03.png" alt="포폴타이틀"/>
+                            </div>
+                            <!--모바일타이틀-->
+                          <!--모바일브랜딩-->
+
+                            <div class="mobWeb" data-aos="fade-up" data-aos-duration="1000" >
+                                <span class="mobText">Branding</span>
+                                <a class="mobWebimg" href="#">
+                                    <img src="images/mobBranding.png" alt="모바일브랜딩대표이미지"/>
+                                </a>
+                            </div>
+                            <!--모바일브랜딩-->
+                        <!---브랜딩-->
+                        <!--캐릭터-->
+                        <div class="box4"  data-aos="fade-right" data-aos-duration="1000">
+                            <div class="Character">
+                                <a href="#"><img src="images/CharacterImg.png" alt="캐릭터대표이미지"/></a>
+
+                                <div class="webClick CharacterClick">
+                                    <a class="moreBtn" href="sub/sub1html.html">
+                                        <img class="bigMorebtn bigMorebtn3" src="images/more.png">
+                                        <div class="moreBtn2" href="#">MORE</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="textBox1 textBox1_4">
+                                <a href="#">
+                                <img class="oneImg oneImg4" src="images/04.png" alt="04"/>
+                                <img class="oneLine" src="images/webLine.png" alt="줄"/>
+                                <span>Character</span>
+                                </a>
+                            </div>
+                          </div>
+                                                     
+                                                     
+                            <!--모바일타이틀-->
+                            <div class="mobTitle" data-aos="fade-up" data-aos-duration="1000">
+                              <img src="images/04.png" alt="포폴타이틀"/>
+                            </div>
+                            <!--모바일타이틀-->
+                          <!--모바일캐릭터-->
+
+                            <div class="mobWeb" data-aos="fade-up" data-aos-duration="1000" >
+                                <span class="mobText">Character</span>
+                                <a class="mobWebimg" href="#">
+                                    <img src="images/mobCharacter.png" alt="모바일캐릭터대표이미지"/>
+                                </a>
+                            </div>
+                            <!--모바일캐릭터-->
+                          <!--캐릭터-->
+                          
+                          
+                          
+                                                      
+                            <!--모바일타이틀-->
+                            <div class="mobTitle" data-aos="fade-up" data-aos-duration="1000">
+                              <img src="images/01.png" alt="포폴타이틀"/>
+                            </div>
+                            <!--모바일타이틀-->
+                          <!--모바일페스티벌-->
+
+                            <div class="mobWeb" data-aos="fade-up" data-aos-duration="1000">
+                                <span class="mobText">Festival</span>
+                                <a class="mobWebimg" href="#">
+                                    <img src="images/mobFestival.png" alt="모바일페스티벌대표이미지"/>
+                                </a>
+                            </div>
+                            <!--모바일페스티벌-->
+                            
+                            
+                            
+                            
+                                                      
+                            <!--모바일타이틀-->
+                            <div class="mobTitle" data-aos="fade-up" data-aos-duration="1000">
+                              <img src="images/02.png" alt="포폴타이틀"/>
+                            </div>
+                            <!--모바일타이틀-->  
+                          <!--모바일프로덕트-->
+
+                            <div class="mobWeb" data-aos="fade-up" data-aos-duration="1000">
+                                <span class="mobText">Product</span>
+                                <a class="mobWebimg" href="#">
+                                    <img src="images/mobProduct.png" alt="모바일프로덕트대표이미지"/>
+                                </a>
+                            </div>
+                            <!--모바일프로덕트-->
+                            
+                            
+                            
+                            
+                            
+                                                        
+                            <!--모바일타이틀-->
+                            <div class="mobTitle" data-aos="fade-up" data-aos-duration="1000">
+                              <img src="images/03.png" alt="포폴타이틀"/>
+                            </div>
+                            <!--모바일타이틀-->
+                          <!--모바일사진-->
+
+                            <div class="mobWeb" data-aos="fade-up" data-aos-duration="1000" >
+                                <span class="mobText">Picture</span>
+                                <a class="mobWebimg" href="#">
+                                    <img src="images/mobPicture.png" alt="모바일사진대표이미지"/>
+                                </a>
+                            </div>
+                            <!--모바일사진-->
+                            
+                            
+                            
+                            
+                                                        
+                            <!--모바일타이틀-->
+                            <div class="mobTitle" data-aos="fade-up" data-aos-duration="1000">
+                              <img src="images/04.png" alt="포폴타이틀"/>
+                            </div>
+                            <!--모바일타이틀-->
+                          <!--모바일현장실습-->
+
+                            <div class="mobWeb"  data-aos="fade-up" data-aos-duration="1000">
+                                <span class="mobText">Etc</span>
+                                <a class="mobWebimg" href="#">
+                                    <img src="images/mobWork.png" alt="모바일현장실습대표이미지"/>
+                                </a>
+                            </div>
+                            <!--모바일현장실습-->
+                    </div>
+                </div>
+                 <!--서브컨텐츠1-->
+                <!---서브컨텐츠2-->
+                <div class="subCon2 target" id="3">
+                    <div class="subContent inner">
+                       <!--페스티벌-->
+                        <div class="box1 subBox1 cf" data-aos="fade-left" data-aos-duration="1000">
+                            <div class="textBox1 sub2TextBox1">
+                                <a href="#">
+                                <img class="oneImg" src="images/01.png" alt="01"/>
+                                <img class="oneLine" src="images/webLine.png" alt="줄"/>
+                                Festival
+                                </a>
+                            </div>
+                            <div class="web">
+                                <a class="webImg" href="#"><img src="images/FestivalImg3.png" alt="웹대표이미지"/></a>
+                                
+                                <div class="webClick FestivalClick">
+                                    <a class="moreBtn" href="sub/sub1html.html">
+                                        <img class="bigMorebtn" src="images/more.png">
+                                        <div class="moreBtn2" href="#">MORE</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--페스티벌-->
+                                          
+                        <!--프로덕트--> 
+                        <div class="box2 subBox2" data-aos="fade-right" data-aos-duration="1000">
+                            <div class="Graphic">
+                                <a href="#"><img src="images/ProductImg2.png" alt="프로덕트대표이미지"/></a>
+
+                               
+                                <div class="webClick ProductClick">
+                                    <a class="moreBtn" href="sub/sub1html.html">
+                                        <img class="bigMorebtn bigMorebtn2" src="images/more.png">
+                                        <div class="moreBtn2" href="#">MORE</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="textBox1">
+                                <a href="#">
+                                <img class="oneImg oneImg2" src="images/02.png" alt="02"/>
+                                <img class="oneLine oneLine2" src="images/webLine.png" alt="줄"/>
+                                <span>Product</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!--프로덕트-->
+                        
+                        <!--사진-->
+                        <div class="box3 subBox3" data-aos="fade-left" data-aos-duration="1000">
+                            <div class="textBox1 textBox1_3">
+                                <a href="#">
+                                <img class="oneImg oneImg3" src="images/03.png" alt="03"/>
+                                <img class="oneLine"  src="images/webLine.png" alt="줄"/>
+                                Picture
+                                </a>
+                            </div>
+
+                            <div class="Branding">
+                                <a href="#"><img src="images/PictureImg.png" alt="프라하에서찍은거"/></a>
+                                
+                                <div class="webClick graphicClick PictureClick">
+                                    <a class="moreBtn" href="sub/sub/sub1html.html">
+                                        <img class="bigMorebtn bigMorebtn2" src="images/more.png">
+                                        <div class="moreBtn2" href="#">MORE</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--사진-->
+                        
+                        <!--현장실습-->
+                        <div class="box4 subBox4" data-aos="fade-right" data-aos-duration="1000">
+                            <div class="Character">
+                                <a href="#"><img src="images/WorkImg2.png" alt="현장실습때"/></a>
+
+                                <div class="webClick WorkClick">
+                                    <a class="moreBtn" href="sub/sub1html.html">
+                                        <img class="bigMorebtn bigMorebtn3" src="images/more.png">
+                                        <div class="moreBtn2" href="#">MORE</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="textBox1 textBox1_4">
+                                <a href="#">
+                                <img class="oneImg oneImg4" src="images/04.png" alt="04"/>
+                                <img class="oneLine" src="images/webLine.png" alt="줄"/>
+                                <span>Etc</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!--현장실습-->
+                    
+                    </div>
+                
+                </div>
+                <!---서브컨텐츠2-->
+                <!---contact-->
+                <div class="contact target" id="4">
+                    
+                    <!--댕큐-->
+                    <div class="thankYou" data-aos="flip-right" data-aos-duration="3000">
+                        <img src="images/Thanksss.png"/>
+
+                        <div class="tfw">
+                        THANK YOU FOR WATCHING
+                        </div>
+                        <ul class="tel">
+                            <li>Hye Ji Lee</li>
+                            <li>gpwl4518@gmail.com</li>
+                            <li>+82(0)10-8834-4518</li>
+                        </ul>
+                    </div>
+                    <!--댕큐-->
+                    <!--이메일 폼-->
+                    <div class="emailForm">
+                      <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+                      action="https://script.google.com/macros/s/AKfycbyz-2Yp0lczbUx-wGckixOWS_aSXaiMuoaPdce4/exec">
+                        <!-- change the form action to your script url -->
+
+                        <div class="form-elements">
+                          <fieldset class="pure-group Pname">
+                            <input id="name" name="name" placeholder="Name" />
+                          </fieldset>
+
+                          <fieldset class="pure-group Pemail">
+                            
+                            <input id="email" name="email" type="email" value=""
+                            required placeholder="Your Email Address"/>
+                          </fieldset>
+
+                          <fieldset class="pure-group Pgroup">
+                            <textarea id="message" name="message" rows="10"
+                            placeholder="Your Message"></textarea>
+                          </fieldset>
+
+
+                          <button class="button-success pure-button button-xlarge">
+                            <i class="fa fa-paper-plane"></i>
+                            
+                            &nbsp;Send Email
+                             <!-----샌드메일 호버------>
+
+       		
+                            <div class="box bg-3">
+                                <button class="button button--nina button--border-thin button--round-s" data-text="Send Mail">
+                                    <span>S</span><span>e</span><span>n</span><span>d</span> <span>M</span><span>a</span><span>i</span><span>l</span>
+                                </button>
+                            </div>
+
+                         <!-----샌드메일 호버------>
+                            </button>
+                        </div>
+
+                        <!-- Customise the Thankyou Message People See when they submit the form: -->
+                        <div class="thankyou_message" style="display:none;">
+                          <h2><em>Thanks</em> for contacting us again!
+                            We will get back to you soon!</h2>
+                        </div>
+
+                      </form>
+                    </div>
+                    <!--이메일 폼-->
+                </div>
+                <!---contact-->
+               
+                
+            </div>
+            <!--컨테이너-->
+             </section>
+
+             
+        </div>
+        <!--전체시작-->
+    </body>
+    <div class="loadingBox">
+        <div class="loading">
+        <!-- partial:index.partial.html -->
+            <div class="word">LOADING...</div>
+            <div class="overlay"></div>
+            <!-- partial -->
+              <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js'></script>
+            <script  src="js/loading.js"></script>
+        </div>
+    </div>
+    
+</html>
